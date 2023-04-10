@@ -1,0 +1,59 @@
+{
+  "name": "lesson21_slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write . && eslint . --fix",
+    "prepare": "husky install",
+    "build": "webpack --env production",
+    "build_serv": "webpack serve --env production",
+    "dev": "webpack --env development",
+    "dev_serv": "webpack serve --env development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaKharsova/Slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElenaKharsova/Slider/issues"
+  },
+  "homepage": "https://github.com/ElenaKharsova/Slider#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@types/jest": "^29.5.0",
+    "babel-jest": "^29.5.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-globals": "^0.1.7",
+    "jsdom": "^21.1.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "prettier": "^2.8.7",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css}": "prettier --write"
+  }
+}
