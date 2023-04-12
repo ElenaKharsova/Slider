@@ -1,0 +1,42 @@
+.wrap {
+  width: 98%;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  width: 50px;
+  height: 100px;
+  border-radius: 60px;
+  border-color: rgb(121, 125, 127);
+  background-color: rgb(121, 125, 127);
+  border-style: none;
+  font-size: 25px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 0;
+  padding: 0 20px 0 20px;
+}
+
+.active {
+  width: 100%;
+}

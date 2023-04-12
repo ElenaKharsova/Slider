@@ -19,5 +19,7 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+    'no-plusplus': 'off',
+    'no-unused-expressions': 'off',
   },
 };
