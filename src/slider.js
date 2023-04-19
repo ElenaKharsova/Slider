@@ -3,9 +3,13 @@ export function getAllCarouselItems(element) {
 }
 
 export function nextSlide() {
+  // console.log("nextSlide");
+  // console.log(this.outerHTML);
+  // console.log(document.querySelector('#carousel').outerHTML);
   const allCarouselItems = getAllCarouselItems(
     document.querySelector('#carousel'),
   );
+
   const { length } = allCarouselItems;
   if (length > 1) {
     for (let i = 0; i < length; i++) {
@@ -42,34 +46,16 @@ export function previewSlide() {
   }
 }
 
-export function createSlider(element, countSliders = 1) {
-  element.classList.add('carousel');
-  element
-    .appendChild(document.createElement('button'))
-    .classList.add('button', 'preview');
-  element.appendChild(document.createElement('ul'));
-  element
-    .appendChild(document.createElement('button'))
-    .classList.add('button', 'next');
-
-  const ul = element.querySelector('ul');
-  for (let i = 0; i < countSliders; i++) {
-    const li = document.createElement('li');
-    const img = document.createElement('img');
-    img.classList.add('carousel-item');
-    if (i === 0) {
-      img.classList.add('active');
-    }
-    li.appendChild(img);
-    ul.appendChild(li);
+(function () {
+  function initialize() {
+    console.log("I'm here!!!!!!!!!!!!!!!!");
+    document.querySelector('button.next').addEventListener('click', nextSlide);
+    document
+      .querySelector('button.preview')
+      .addEventListener('click', previewSlide);
+    document.querySelector('button.preview').innerHTML = '<';
+    document.querySelector('button.next').innerHTML = '>';
   }
 
-  element.querySelector('button.next').addEventListener('click', nextSlide);
-}
-
-document.querySelector('button.next').addEventListener('click', nextSlide);
-document
-  .querySelector('button.preview')
-  .addEventListener('click', previewSlide);
-document.querySelector('button.preview').innerHTML = '<';
-document.querySelector('button.next').innerHTML = '>';
+  window.addEventListener('load', initialize);
+}());

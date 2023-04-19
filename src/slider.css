@@ -21,6 +21,10 @@ li {
   text-align: center;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .carousel {
   display: flex;
   justify-content: space-between;
