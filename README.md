@@ -11,4 +11,5 @@ Steps for applying slider:
 3. Call function initialize() with parameters - all tags with class = "slider".
 
 Result of work you can see in https://elenakharsova.github.io/Slider/
+
 Codesandbox https://codesandbox.io/s/github/ElenaKharsova/Slider/tree/slider
