@@ -1,6 +1,6 @@
 module.exports = {
   clearMocks: true,
-  coverageDirectory: 'coverage',
-  coverageProvider: 'v8',
-  testEnvironment: 'jsdom',
+  coverageDirectory: "coverage",
+  coverageProvider: "v8",
+  testEnvironment: "jsdom",
 };

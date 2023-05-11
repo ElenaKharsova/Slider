@@ -1,13 +1,13 @@
 module.exports = (api) => ({
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
-        useBuiltIns: 'entry',
-        corejs: '3.22',
-        targets: api.caller((caller) => caller && caller.target === 'node')
-          ? { node: 'current' }
-          : { chrome: '58', ie: '11' },
+        useBuiltIns: "entry",
+        corejs: "3.22",
+        targets: api.caller((caller) => caller && caller.target === "node")
+          ? { node: "current" }
+          : { chrome: "58", ie: "11" },
       },
     ],
   ],
