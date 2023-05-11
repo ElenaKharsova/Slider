@@ -1,3 +1,5 @@
-import './styles.css';
-import './slider';
-import './slider.css';
+import "./styles.css";
+import { initialize } from "./slider";
+import "./slider.css";
+
+initialize(document.querySelectorAll(".slider"));
