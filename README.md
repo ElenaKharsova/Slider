@@ -29,3 +29,5 @@ initialize(document.querySelectorAll(".slider"));
 Result of work you can see in https://elenakharsova.github.io/Slider/
 
 Codesandbox https://codesandbox.io/s/github/ElenaKharsova/Slider/tree/slider
+
+![image](https://github.com/ElenaKharsova/Slider/assets/96537658/bca197cf-829c-4993-a390-7c53fa5d6d3c)
