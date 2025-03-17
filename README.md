@@ -1,5 +1,4 @@
-<img src="https://img.shields.io/badge/HTML-blue"> <img src="https://img.shields.io/badge/CSS-blue">
-<img src="https://img.shields.io/badge/JS-red">
+<img src="https://img.shields.io/badge/JS-yellow"> <img src="https://img.shields.io/badge/HTML-orange"> <img src="https://img.shields.io/badge/CSS-purple">
 
 ## Slider plugin
 
